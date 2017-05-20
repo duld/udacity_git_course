@@ -1,3 +1,19 @@
-# Initializing an empty repository: git init
-# add files to the staging area: git add <file name>
+# Initializing an empty repository: 
+	$ git init
 
+# add files to the staging area: 
+	$ git add <file name>
+
+# to remove files from the staging area
+	$ git rm --cached <file>
+
+# How to write a commit message:
+	commit message style guide: http://udacity.github.io/git-styleguide/
+
+	type: subject
+
+	body
+
+	footer
+
+	These are my changes
