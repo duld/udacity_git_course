@@ -1,0 +1,14 @@
+Q: What happens when you initialize a repository? Why do you need to do it?
+
+Response:
+ # When you initialize a git repository a hidden directory and a series of
+   sub-directories and files are created. To initialize a repository you need 
+   to use the 'git init' command while in the top directory directory desired 
+   for use as a repo.
+
+Google's Answer: 
+ # The git init command creates a new Git repository. It can be used to 
+   convert an existing, unversioned project to a Git repository or initialize 
+   a new, empty repository. Most other Git commands are not available outside 
+   of an initialized repository, so this is usually the first command you'll 
+   run in a new project.

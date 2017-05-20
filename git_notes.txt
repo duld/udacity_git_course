@@ -1,0 +1,3 @@
+# Initializing an empty repository: git init
+# add files to the staging area: git add <file name>
+
