@@ -12,3 +12,29 @@ Google's Answer:
    a new, empty repository. Most other Git commands are not available outside 
    of an initialized repository, so this is usually the first command you'll 
    run in a new project.
+
+Thoughts:
+ # We have to use git init to setup a git repository so that we can track our
+   changes to any files. We are using git as our version control so it would 
+   make sense that use git init to setup our directory to be a git repo.
+
+
+Q: How is the staging area different from the working directory and the 
+   repository? What value do you think it offers?
+
+Response:
+ # The staging area is different from the working directory in that it is 
+   explicity designating which file(s) are going to have their changes saved 
+   during the next commit.
+
+   The staging area is different from the repo because a repo represents the 
+   current state resulting from all previous commits. The staging are is 
+   essential the space or the files specified that will be updating the repo's 
+   state during the next commit.
+
+Google's Answer:
+ # Staging is a step before the commit process in git. That is, a commit in 
+   git is performed in two steps: staging and actual commit. As long as a 
+   changeset is in the staging area, git allows you to edit it as you like (
+   replace staged files with other versions of staged files, remove changes 
+   from staging, etc
