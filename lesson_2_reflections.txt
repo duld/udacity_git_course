@@ -1,40 +1,82 @@
+_______________________________________________________________________________
 Q: What happens when you initialize a repository? Why do you need to do it?
 
-Response:
- # When you initialize a git repository a hidden directory and a series of
-   sub-directories and files are created. To initialize a repository you need 
-   to use the 'git init' command while in the top directory directory desired 
-   for use as a repo.
+	Response:
+	 # When you initialize a git repository a hidden directory and a series of
+	   sub-directories and files are created. To initialize a repository you 
+	   need to use the 'git init' command while in the top directory directory 
+	   desired for use as a repo.
 
-Google's Answer: 
- # The git init command creates a new Git repository. It can be used to 
-   convert an existing, unversioned project to a Git repository or initialize 
-   a new, empty repository. Most other Git commands are not available outside 
-   of an initialized repository, so this is usually the first command you'll 
-   run in a new project.
+	Google's Answer: 
+	 # The git init command creates a new Git repository. It can be used to 
+	   convert an existing, unversioned project to a Git repository or 
+	   initialize a new, empty repository. Most other Git commands are not 
+	   available outside of an initialized repository, so this is usually the 
+	   first command you'll run in a new project.
 
-Thoughts:
- # We have to use git init to setup a git repository so that we can track our
-   changes to any files. We are using git as our version control so it would 
-   make sense that use git init to setup our directory to be a git repo.
+	Thoughts:
+	 # We have to use git init to setup a git repository so that we can track 
+	   our changes to any files. We are using git as our version control so it 
+	   would make sense that use git init to setup our directory to be a git 
+	   repo.
 
-
+_______________________________________________________________________________
 Q: How is the staging area different from the working directory and the 
    repository? What value do you think it offers?
 
-Response:
- # The staging area is different from the working directory in that it is 
-   explicity designating which file(s) are going to have their changes saved 
-   during the next commit.
+	Response:
+	 # The staging area is different from the working directory in that it is 
+	   explicity designating which file(s) are going to have their changes 
+	   saved during the next commit.
 
-   The staging area is different from the repo because a repo represents the 
-   current state resulting from all previous commits. The staging are is 
-   essential the space or the files specified that will be updating the repo's 
-   state during the next commit.
+	   The staging area is different from the repo because a repo represents 
+	   the current state resulting from all previous commits. The staging are 
+	   is essential the space or the files specified that will be updating the 
+	   repo's state during the next commit.
 
-Google's Answer:
- # Staging is a step before the commit process in git. That is, a commit in 
-   git is performed in two steps: staging and actual commit. As long as a 
-   changeset is in the staging area, git allows you to edit it as you like (
-   replace staged files with other versions of staged files, remove changes 
-   from staging, etc
+	Google's Answer:
+	 # Staging is a step before the commit process in git. That is, a commit 
+	   in git is performed in two steps: staging and actual commit. As long as 
+	   a changeset is in the staging area, git allows you to edit it as you 
+	   like (replace staged files with other versions of staged files, remove 
+	   changes from staging, etc
+
+_______________________________________________________________________________
+Q: How can you use the staging area to make sure you have one commit per 
+   logical change?
+
+   Response:
+    # You can ensure that you have one logical change per commit by using the 
+      'git diff' command. Using 'git diff' will list all additions and 
+      deletions between the staging area and the working directory or the 
+      staging area and any specified commit in the commit history.
+
+   Google's Answer:
+    # Not exactly answering the question but the consensus on Stack overflow 
+      and the general internet is that you should commit often. And each time 
+      you check in it should be for one block of code that is finished/stable/
+      compiles. Every check in should at the very least be stable and not 
+      break during the compilation or parsing step. This does not mean the code has to be 100% "correct".
+
+      # General advice from StackOverflow Anders Sandvig
+      "If you are doing many changes to a project at the same time, split them 
+      up into logical parts and commit them in multiple sessions. This makes 
+      it much easier to track the history of individual changes, which will 
+      save you a lot of time when trying to find and fix bugs later on. For 
+      example, if you are implementing feature A, B and C and fixing bug 1, 2 
+      and 3, that should result in a total of at least six commits, one for 
+      each feature and one for each bug. If you are working on a big feature 
+      or doing extensive refactoring, consider splitting your work up into 
+      even smaller parts, and make a commit after each part is completed. 
+      Also, when implementing independent changes to multiple logical modules, 
+      commit changes to each module separately, even if they are part of a 
+      bigger change.
+
+      Ideally, you should never leave your office with uncommitted changes on 
+      your hard drive. If you are working on projects where changes will 
+      affect other people, consider using a branch to implement your changes 
+      and merge them back into the trunk when you are done. When committing 
+      changes to libraries or projects that other projects—and thus, other 
+      people—depend on, make sure you don’t break their builds by committing 
+      code that won’t compile. However, having code that doesn’t compile is 
+      not an excuse to avoid committing. Use branches instead."
