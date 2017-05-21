@@ -43,3 +43,36 @@
 
 	The Footer:
 	  The footer is optional and is only used to to reference tracker IDs.
+
+
+// Compare Working Directory, Staging Area and Repository //
+
+# Compare working directory with staging area
+	$ git diff  //git diff with 0 arguments will compare these two by default
+
+# Compare Staging Area with Repository
+	$ git diff --staged
+
+# git 'detached HEAD' state
+	When git is in a detached HEAD state that means you have checked out an old
+	git commit. To get back to the 'Tip' of the main repo use
+	$ git checkout Master
+
+Branches:
+	The main branch in a git repository is the 'Master Branch'.
+
+	# See what branches exist in the repository
+	  $ git branch  //the branch listed with a '*' is the active branch.
+    
+    # Create a new branch in the repository
+      $ git branch <branch name>
+
+    # Switch to a different branch
+      $ git checkout <branch name>
+
+
+
+Merging:
+	The process of 'merging' a two branchs to a single branch.
+
+
