@@ -113,4 +113,14 @@ Q: What are some situations where branches would be helpful in keeping your
 
    Udacity's response:
      # Branches are good for context switching. Creating branches when 
-       switching to a new feature or fixing a bug. The Master branch should always work, a production branch is being worked on. 
+       switching to a new feature or fixing a bug. The Master branch should 
+       always work, a production branch is being worked on. 
+
+Q: How do the diagrams help you visualize the branch structure?
+
+	Response:
+	 # Drawing a diagram of your branch structure helps you understand why 
+	   some commits may not be 'reachable' from your current HEAD location. 
+	   Because of how git log goes from child to parent it will miss whole 
+	   branches if the branch is not 'reachable' through child to parent 
+	   lookup.
