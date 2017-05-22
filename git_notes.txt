@@ -76,3 +76,16 @@ Merging:
 	The process of 'merging' a two branchs to a single branch.
 
 
+Reachability:
+	In git, each commit stores a reference to it's parent commit. Git log will 
+	trace all the commits backwards from your current checked-out branch back 
+	to the very first commit. Child branches that split off will not be logged 
+	if you are not using git log in that specific child branch.
+
+	To save the changes in this new commit, you must designate it as its own 
+	branch by using: $ git checkout -b <new_branch_name>
+
+	This is equivalent to running:
+	$ git branch <new_branch_name>
+	$ git checkout <new_branch_name>
+
