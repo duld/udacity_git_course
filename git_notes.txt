@@ -84,6 +84,10 @@ Merging:
 	// this will diff the commit with its direct parent commit.
 	$ git show <git commit id>
 
+	// if you want to update a branch with new code from master you must:
+	1) checkout the branch you want to merge with master
+	2) $ git merge <branch to update with master> master
+
 
 Reachability:
 	In git, each commit stores a reference to it's parent commit. Git log will 
@@ -97,4 +101,15 @@ Reachability:
 	This is equivalent to running:
 	$ git branch <new_branch_name>
 	$ git checkout <new_branch_name>
+
+Merging Conflicts:
+	If two similar changes in the same file are present during a merge, this 
+	will cause a merge conflict.
+
+
+
+
+
+
+
 
