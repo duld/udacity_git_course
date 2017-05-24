@@ -73,7 +73,16 @@ Branches:
 
 
 Merging:
-	The process of 'merging' a two branchs to a single branch.
+	The process of 'merging' a two branches to a single branch.
+	with Master branch checked out
+	$ git merge master <branch to be merged>
+
+	// delete the old branch label
+	$ git branch -d <branch that was merged>
+
+	// find useful git diff information on a commit in a merged branch commit.
+	// this will diff the commit with its direct parent commit.
+	$ git show <git commit id>
 
 
 Reachability:
