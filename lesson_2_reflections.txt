@@ -124,3 +124,24 @@ Q: How do the diagrams help you visualize the branch structure?
 	   Because of how git log goes from child to parent it will miss whole 
 	   branches if the branch is not 'reachable' through child to parent 
 	   lookup.
+
+
+Q: What is the result of mergin two branches together? Why do we represent it 
+   in the diagram the way we do?
+
+   Response:
+    # When we merge two branches together the result is the sum of all 
+      additions and subtractions in each branch. The net result should be a 
+      file/files that reflect the changes made in each branch.
+
+      The diagram is drawn in the manner of two paths joining together. 
+      Merging two branches together is visualized this way because it clearly 
+      conveys the idea of joining two seperate paths of features. I wish that I was able to more clearly state that.
+
+    Note: 
+     # this is really strange but I feel that it will become much clearer to 
+       me as I incorporate git into my workflow.
+
+
+
+
