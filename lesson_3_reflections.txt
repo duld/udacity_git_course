@@ -1,0 +1,11 @@
+Q: When would you want to use a remote repository rather than keeping all your 
+   work local?
+   
+   Response:
+    # I can imagine that when you are looking to actively share your code with
+      other individuals a remote repository would be very useful. Any form of 
+      collaboration would benefit with a remote repo. Also it is another form
+      of backup, a versioned backup as well. 
+      
+      Although keeping anything that might need to remain private on your 
+      public facing repo would be a bad. A very bad.
