@@ -108,8 +108,20 @@ Merging Conflicts:
 
 
 
+Github:
+	# Creating a new github repository:
+	  click on the "+" icon to create a new repository; and name it.
 
+	# Setting up a remote repository
+     // origin is standard if you have only one remote repo
+	  $ git remote add origin <remote repository URL>
+	  $ git remote -v // validate the URL
 
+	# pushing the changes to the remote repository:
+	  $ git push <remote branch name> <branch to push commits from>
+	  $ git push origin master
 
+	# View all remote repositories in your github account
+	  $ git remote
 
-
+	# Github's README.md
