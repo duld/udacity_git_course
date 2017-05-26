@@ -136,12 +136,31 @@ Q: What is the result of mergin two branches together? Why do we represent it
 
       The diagram is drawn in the manner of two paths joining together. 
       Merging two branches together is visualized this way because it clearly 
-      conveys the idea of joining two seperate paths of features. I wish that I was able to more clearly state that.
+      conveys the idea of joining two seperate paths of features. I wish that 
+      I was able to more clearly state that.
 
     Note: 
      # this is really strange but I feel that it will become much clearer to 
        me as I incorporate git into my workflow.
 
 
+Q: What are the pros and cons of Git's automatic merging vs. always doing 
+   merges manuall?
 
+   Response:
+    # The pro of Git's automatically merging two commits together for you, is 
+      that if there is minimal change overlap it is hands off. If however 
+      multiple people are adding features and refactoring the same code there 
+      is no real way of automatically telling which changes should stay and 
+      which can be tossed out. Even if there are conflicts, git wils raise 
+      them to your attention in a searchable fashion. Which makes tracking 
+      down the problem area's much easier.
+
+      The con of Git doing the merging automatically is that, Git is unable to 
+      intelligently decipher which changes should stay over other changes. You 
+      the developer need to look at the conflicts, understand whats going on 
+      and make a decision. To be fair though, how is git supposed to know and 
+      understand the context of your code, or even what the code is meant to 
+      do? It is responsible for recording commits, tracking changes and help 
+      facilitate experimentation.
 
