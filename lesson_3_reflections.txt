@@ -55,3 +55,12 @@ Q: Describe the differences between forks, clones, and branches. When would
      want to Clone. You would make a Branch any time you wanted to work on a 
      new feature, fix a bug, or make any kind of exploratory changes. This 
      work may or may not be merged into the main branch at a later time.
+
+Q: What is the benefit of having a copy of the last known state of the remote 
+   stored locally?
+
+   Response:
+     It is a nice visual way to see what the current state is of the remote 
+     repository. When I saw orign/master I was a little confused at first but 
+     once I read the messages that git status would output about my local repo 
+     being ahead of remote by x number of commits it was appreciated.
