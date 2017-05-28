@@ -124,11 +124,22 @@ Github:
 	# 'Push'ing the changes to the remote repository:
 	  $ git push <remote branch name> <branch to push commits from>
 	  $ git push origin master
-	  // git push <remote> <branch>
+	  // git push <remote> <local branch>
 
 	# 'Pull'ing any changes from the github remote repository to local
 	  $ git pull origin master
-	  // git pull <remote> <branch>
+	  // git pull <remote> <local branch>
+
+	# 'Fetch'ing a collaborator's commits
+	  $ git fetch origin/master master
+	  $ git merge origin/master master // to merge the changes together
+	  // fix any merge conflicts -- then
+	  $ git add <file>
+	  $ git commit
+	  $ git push origin master
+	  // git fetch <remote/branch> <local branch>
+	  
+
 
 	# Github's README.md
 	  The README.md is a markdown file meant to provide general information 
