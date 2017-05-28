@@ -9,3 +9,49 @@ Q: When would you want to use a remote repository rather than keeping all your
       
       Although keeping anything that might need to remain private on your 
       public facing repo would be a bad. A very bad.
+
+
+Q: Why might you want to always pull changes manually rather than having Git 
+   automatically stay up-to-date with your remote repository?
+
+   Response:
+     One reason why you wouldn't want git to automatically update your 
+     repository, is if you are working in a file and someone pushes a commit 
+     that include's changes to that same file. This could overwrite your work 
+     possibly if you are not working on a different branch than your 
+     *possibly* well meaning collaborator.
+
+
+Q: Describe the differences between forks, clones, and branches. When would 
+   you use one instead of another?
+
+   Response:
+   	 Fork:
+     A FORK, is a type of clone which is tracked by the github database (stack 
+     overflow user paulo ebermann). A fork allows you to clone a repository 
+     while maintaining credit to the original author. You can pull down the 
+     repository, make any changes and commit those changes back to the remote 
+     repository w/o impacting the original repository linked to another 
+     individuals account. One would also be able to clone another user's repo 
+     then add the cloned repo to your own account and begin working off of 
+     that, but the link back to the original would be lost.
+
+     Clone:
+     A CLONE is a duplicated repository and all of it's commits. This usually 
+     involves downloading a remote repository to your local machine and making 
+     changes and commits there.
+
+     Branch:
+     A BRANCH is an independant line of development. Branches serve as an 
+     abstraction for the edit/stage/commit process. You can think of them as a 
+     way to request a brand new working directory, staging area and project 
+     history. New commits are recorded in the history for the current branch 
+     which results in a fork in the history of the project. 
+     (https://www.atlassian.com/git/tutorials/using-branches)
+
+     If you want to make a copy of someone else's code to work on and maintain 
+     credit to the original author you would want to use a Fork. If you want 
+     to download one of your own remote repos onto your own machine you would 
+     want to Clone. You would make a Branch any time you wanted to work on a 
+     new feature, fix a bug, or make any kind of exploratory changes. This 
+     work may or may not be merged into the main branch at a later time.
