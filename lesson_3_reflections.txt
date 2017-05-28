@@ -64,3 +64,23 @@ Q: What is the benefit of having a copy of the last known state of the remote
      repository. When I saw orign/master I was a little confused at first but 
      once I read the messages that git status would output about my local repo 
      being ahead of remote by x number of commits it was appreciated.
+
+Q: How would you collaborate without using Git or GitHub? What would be 
+   easier, and what would be harder?
+
+   Response:
+     If I were to try and collaborate with other's without using GitHub, I 
+     would try to limit which files each individual could work on at a given 
+     time. If any big change was introduced we would go and fix the conflicts 
+     in each file by hand or using an IDE. 
+
+     I think it at the very beginning be much easier than using GitHub. The 
+     parts that are easier than using GitHub I think is just not using git in 
+     general. Write code the way you do when you are by yourself and 
+     compromise where necissary so that source code A will be able to talk to 
+     B and C etc. 
+
+     But as the project grows, or needs to change I can imagine 
+     that managing those changes could be a lot of work. There may even be 
+     huge rewrites of features to match the coding standards of the team, 
+     which might have grown since then.
