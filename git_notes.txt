@@ -1,3 +1,4 @@
+_______________________________________________________________________________
 # Initializing an empty repository: 
 	$ git init
 
@@ -117,11 +118,24 @@ Github:
 	  $ git remote add origin <remote repository URL>
 	  $ git remote -v // validate the URL
 
-	# pushing the changes to the remote repository:
-	  $ git push <remote branch name> <branch to push commits from>
-	  $ git push origin master
-
 	# View all remote repositories in your github account
 	  $ git remote
 
+	# 'Push'ing the changes to the remote repository:
+	  $ git push <remote branch name> <branch to push commits from>
+	  $ git push origin master
+	  // git push <remote> <branch>
+
+	# 'Pull'ing any changes from the github remote repository to local
+	  $ git pull origin master
+	  // git pull <remote> <branch>
+
 	# Github's README.md
+	  The README.md is a markdown file meant to provide general information 
+	  about a repository. Such information can include, contributers, how to 
+	  set up the project, what problem the project is intended to solve, 
+	  dependencies, etc.
+
+	# Forking
+	  A fork is like a 'git clone' that github will do for you while giving 
+	  the original creator of the code credit for his/her work.
