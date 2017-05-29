@@ -139,8 +139,6 @@ Github:
 	  $ git push origin master
 	  // git fetch <remote/branch> <local branch>
 	  
-
-
 	# Github's README.md
 	  The README.md is a markdown file meant to provide general information 
 	  about a repository. Such information can include, contributers, how to 
@@ -150,3 +148,24 @@ Github:
 	# Forking
 	  A fork is like a 'git clone' that github will do for you while giving 
 	  the original creator of the code credit for his/her work.
+
+	# Pull request
+	  A pull request is a way to ask someone who has commit access to a remote 
+	  repository to merge in any changes you've made on your fork of their 
+	  repository.
+	  
+	# Keeping a Fro Up-To-Date
+	  1) Add the original repository as a REMOTE in your CLONE
+	  2) PULL the MASTER BRANCH from the original repository
+	  3) MERGE the MASTER BRANCH into your change branch
+	  4) PUSH your change back to your FORK
+
+	  as an example:
+	  $ git remote add upstream git://gihub.com/upstream.git
+	  $ git pull upstream/master master
+	  $ git checkout myBranch
+	  $ git merge master myBranch
+	   // resolve any merge conflicts
+	  $ git push myBranch
+	  $ git push origin master
+	   // initiate a pull request on github.
