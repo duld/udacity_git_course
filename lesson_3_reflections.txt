@@ -65,6 +65,7 @@ Q: What is the benefit of having a copy of the last known state of the remote
      once I read the messages that git status would output about my local repo 
      being ahead of remote by x number of commits it was appreciated.
 
+
 Q: How would you collaborate without using Git or GitHub? What would be 
    easier, and what would be harder?
 
@@ -84,3 +85,20 @@ Q: How would you collaborate without using Git or GitHub? What would be
      that managing those changes could be a lot of work. There may even be 
      huge rewrites of features to match the coding standards of the team, 
      which might have grown since then.
+
+
+Q: When would you want to make changes in a separate branch rather than 
+   directly in master? What benefits does each approach have?
+
+   Response:
+     If you make changes in a seperate branch, it leaves master in a "stable" 
+     state. It would be problematic to make a bunch of changes on the master 
+	 branch, then decide you wanted to go back to an earlier time before those 
+     changes. All the while other people may be commiting their own changes 
+     and updating master past the point where you originally had decided to 
+     abandon your changes. How do you revert back while keeping the changes 
+     others have introduced?
+
+     You would have to branch from an earlier commit, and then merge with the 
+     changes introduced by others, but at the same time deal with all the 
+     merge conflicts that live at the tip of the master branch. 
